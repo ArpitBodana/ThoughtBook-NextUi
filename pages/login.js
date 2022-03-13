@@ -20,7 +20,7 @@ function LoginPage() {
 
         { sessionStorage.getItem('token') && setToken(sessionStorage.getItem('token')) }
 
-    },[])
+    })
     const loginHandler = async () => {
         event.preventDefault()
         const response = await fetch('https://chikubodana.pythonanywhere.com/api/login/', {

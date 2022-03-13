@@ -18,7 +18,7 @@ export default function AddForm() {
         { sessionStorage.getItem('token') && setToken(sessionStorage.getItem('token')) }
 
 
-    },[])
+    })
     const handleAdd = () => {
         event.preventDefault()
         axios.post('https://chikubodana.pythonanywhere.com/api/v1/thoughtbook/generic/', { thought: thought, author: author, user: user }, { headers: { 'Authorization': `Token ${token}` } }).then(() => {

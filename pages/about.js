@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 export default function AboutPrivacy() {
     return (
-        <>
+        <div>
             <Head>
                 <title>About</title>
                 <meta name="description" content=" About Page of the ThoughtBook WebApp" />
@@ -12,7 +12,7 @@ export default function AboutPrivacy() {
 
             </Head>
             <About />
-        </>
+        </div>
     )
 
 }

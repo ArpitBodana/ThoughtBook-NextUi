@@ -22,7 +22,7 @@ export default function ModifyForm({ posts }) {
         { sessionStorage.getItem('token') && setUsername(sessionStorage.getItem('username')) }
 
 
-    },[])
+    })
 
     const handleEdit = (id, dthought, dauthor, duser) => {
         if (authorn === '' && thoughtn === '') {

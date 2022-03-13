@@ -5,7 +5,7 @@ import Notificationbar from '../components/Notificationbar'
 import { useRouter } from 'next/router';
 import PleaseLogin from '../components/PleaseLogin';
 import Head from 'next/head'
-export default function changepassword() {
+export default function  Changepassword() {
     const [old, setold] = useState()
     const [newpwd, setnewpwd] = useState()
     const [newpwd2, setnewpwd2] = useState()
@@ -17,7 +17,7 @@ export default function changepassword() {
 
     useEffect(() => {
         { sessionStorage.getItem('token') && setToken(sessionStorage.getItem('token')) }
-    },[])
+    })
     const handleSubmit = () => {
         event.preventDefault()
         if (newpwd !== newpwd2) {
