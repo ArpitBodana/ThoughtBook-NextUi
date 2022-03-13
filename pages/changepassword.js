@@ -17,7 +17,7 @@ export default function changepassword() {
 
     useEffect(() => {
         { sessionStorage.getItem('token') && setToken(sessionStorage.getItem('token')) }
-    })
+    },[])
     const handleSubmit = () => {
         event.preventDefault()
         if (newpwd !== newpwd2) {

@@ -19,7 +19,7 @@ export default function Register() {
 
         { sessionStorage.getItem('token') && setToken(sessionStorage.getItem('token')) }
 
-    })
+    },[])
     const handleSubmit = () => {
         event.preventDefault()
         if (password != password2) {
