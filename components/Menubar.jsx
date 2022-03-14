@@ -83,11 +83,11 @@ const ResponsiveAppBar = () => {
                             noWrap
                             component="div"
                             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-                            className='font-body text-3xl'
+                            
                         >
-                            ThoughtBook
+                            <span className='font-body text-3xl'> ThoughtBook</span>
                         </Typography>
-
+                
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
                                 size="large"
@@ -162,9 +162,8 @@ const ResponsiveAppBar = () => {
                             noWrap
                             component="div"
                             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-                            className='font-body text-2xl'
                         >
-                            ThoughtBook
+                            <span className='font-body text-2xl'> ThoughtBook</span>
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} >
                             <Link href={'/'} >
