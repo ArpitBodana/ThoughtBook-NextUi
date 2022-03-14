@@ -83,11 +83,11 @@ const ResponsiveAppBar = () => {
                             noWrap
                             component="div"
                             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-                            
+
                         >
                             <span className='font-body text-3xl'> ThoughtBook</span>
                         </Typography>
-                
+
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
                                 size="large"
@@ -129,14 +129,18 @@ const ResponsiveAppBar = () => {
                                 <MenuItem onClick={handleCloseNavMenu} className={`${!user && 'hidden'}`}>
                                     <Link href={'/addthought'} >
                                         <a >
-                                            <Typography textAlign="center" className='font-body'><AddCommentSharpIcon /> ADD THOUGHT</Typography>
+                                            <span className={`${!user && 'hidden'}`}>
+                                                <Typography textAlign="center" className='font-body'><AddCommentSharpIcon /> ADD THOUGHT</Typography>
+                                            </span>
                                         </a>
                                     </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu} className={`${!user && 'hidden'}`} >
                                     <Link href={'/editthought'}>
                                         <a>
-                                            <Typography textAlign="center" className='font-body' ><EditIcon /> EDIT THOUGHTS</Typography>
+                                            <span className={`${!user && 'hidden'}`}>
+                                                <Typography textAlign="center" className='font-body' ><EditIcon /> EDIT THOUGHTS</Typography>
+                                            </span>
                                         </a>
                                     </Link>
                                 </MenuItem>
@@ -144,14 +148,18 @@ const ResponsiveAppBar = () => {
                                 <MenuItem onClick={handleCloseNavMenu} className={`${user && 'hidden'}`}>
                                     <Link href={'/login'}>
                                         <a>
-                                            <Typography textAlign="center" className='font-body'><AccessibilityIcon /> LOGIN</Typography>
+                                            <span className={`${user && 'hidden'}`}>
+                                                <Typography textAlign="center" className='font-body'><AccessibilityIcon /> LOGIN</Typography>
+                                            </span>
                                         </a>
                                     </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu} className={`${user && 'hidden'}`}>
                                     <Link href={'/signup'}>
                                         <a>
+                                        <span className={`${user && 'hidden'}`}>
                                             <Typography textAlign="center" className='font-body' ><PersonAddAltRoundedIcon /> SIGNUP</Typography>
+                                            </span>
                                         </a>
                                     </Link>
                                 </MenuItem>
@@ -180,51 +188,59 @@ const ResponsiveAppBar = () => {
                             </Link>
                             <Link href={'/addthought'} >
                                 <a>
-                                    <Button
-                                        onClick={handleCloseNavMenu}
-                                        sx={{ my: 2, color: 'info', display: 'block' }}
-                                        className={`${!user && 'hidden'}`}
+                                    <span className={`${!user && 'hidden'}`}>
+                                        <Button
+                                            onClick={handleCloseNavMenu}
+                                            sx={{ my: 2, color: 'info', display: 'block' }}
 
-                                    >
-                                        <AddCommentSharpIcon /><span className='font-body'> ADD THOUGHT</span>
-                                    </Button>
+
+                                        >
+                                            <AddCommentSharpIcon /><span className='font-body'> ADD THOUGHT</span>
+                                        </Button>
+                                    </span>
                                 </a>
                             </Link>
                             <Link href={'/editthought'} >
                                 <a>
-                                    <Button
-                                        onClick={handleCloseNavMenu}
-                                        sx={{ my: 2, color: 'info', display: 'block' }}
-                                        className={`${!user && 'hidden'}`}
+                                    <span className={`${!user && 'hidden'}`}>
+                                        <Button
+                                            onClick={handleCloseNavMenu}
+                                            sx={{ my: 2, color: 'info', display: 'block' }}
 
-                                    >
-                                        <EditIcon /><span className='font-body'> EDIT THOUGHTS</span>
-                                    </Button>
+
+                                        >
+                                            <EditIcon /><span className='font-body'> EDIT THOUGHTS</span>
+                                        </Button>
+                                    </span>
                                 </a>
                             </Link>
 
                             <Link href={'/login'} >
                                 <a>
-                                    <Button
-                                        onClick={handleCloseNavMenu}
-                                        sx={{ my: 2, color: 'info', display: 'block' }}
-                                        className={`${user && 'hidden'}`}
+                                    <span className={`${user && 'hidden'}`}>
+                                        <Button
+                                            onClick={handleCloseNavMenu}
+                                            sx={{ my: 2, color: 'info', display: 'block' }}
 
-                                    >
-                                        <AccessibilityIcon /> <span className='font-body'>LOGIN</span>
-                                    </Button>
+
+                                        >
+                                            <AccessibilityIcon /> <span className='font-body'>LOGIN</span>
+                                        </Button>
+                                    </span>
                                 </a>
                             </Link>
                             <Link href={'/signup'} >
                                 <a>
-                                    <Button
-                                        onClick={handleCloseNavMenu}
-                                        sx={{ my: 2, color: 'info', display: 'block' }}
-                                        className={`${user && 'hidden'}`}
+                                    <span className={`${user && 'hidden'}`}>
+                                        <Button
+                                            onClick={handleCloseNavMenu}
+                                            sx={{ my: 2, color: 'info', display: 'block' }}
 
-                                    >
-                                        <PersonAddAltRoundedIcon /><span className='font-body'> SIGNUP</span>
-                                    </Button>
+
+                                        >
+                                            <PersonAddAltRoundedIcon /><span className='font-body'> SIGNUP</span>
+                                        </Button>
+                                    </span>
                                 </a>
                             </Link>
 
@@ -271,7 +287,7 @@ const ResponsiveAppBar = () => {
                 </Container>
             </AppBar>
             <hr />
-           
+
             {success && <Notificationbar msg={"Logging Out"} alert={'info'} />}
         </div>
     );

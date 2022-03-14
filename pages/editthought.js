@@ -91,14 +91,14 @@ export default function ModifyForm({ posts }) {
                                     <label className='font-body font-md'>Thought Id-</label>
                                     <label className='font-body font-md'> {post.id} </label>
                                     <br></br>
-                                    <textarea className='border-2 border-rose-500 rounded-2xl p-1 w-full text-center md:h-10 h-40' required defaultValue={post.thought} onChange={() => { setThought(event.target.value) }} />
+                                    <textarea className='border-2 border-rose-500 rounded-2xl p-1 w-full text-center md:h-16 h-40' required defaultValue={post.thought} onChange={() => { setThought(event.target.value) }} />
                                     <br></br>
                                     <label className='font-body font-md'>Author</label>
                                     <br></br>
                                     <textarea className='border-2 border-rose-500 rounded-2xl p-1 text-center md:h-10 h-8' required defaultValue={post.author} onChange={() => { setAuthor(event.target.value) }} />
                                     <br></br>
-                                    <Button onClick={() => handleEdit(post.id, post.thought, post.author, post.user)} variant="outlined" color='error' className='mt-4 mb-3 font-body text-rose-500  bg-white m-4'>Save</Button>
-                                    <Button onClick={() => handleDelete(post.id, post.user)} variant="outlined" color='error' className='mt-4 mb-3 font-body text-rose-500 m-4 bg-white'>Delete</Button>
+                                    <Button className='mt-4 mb-3 font-body text-rose-500  bg-white m-4' onClick={() => handleEdit(post.id, post.thought, post.author, post.user)} variant="outlined" color='error' >Save</Button>
+                                    <Button className='mt-4 mb-3 font-body text-rose-500 m-4 bg-white' onClick={() => handleDelete(post.id, post.user)} variant="outlined" color='error' >Delete</Button>
                                 </form>
                             )
                         }

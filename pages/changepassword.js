@@ -70,7 +70,7 @@ export default function  Changepassword() {
                         <br></br>
                         <input className='border-2 border-rose-500 rounded-2xl p-1' required onChange={() => { setnewpwd2(event.target.value) }} />
                         <br></br>
-                        <Button type='submit' variant="outlined" color='error' className='mt-4 mb-3 font-body text-rose-500'>Change</Button>
+                        <Button className='mt-4 mb-3 font-body text-rose-500' type='submit' variant="outlined" color='error' >Change</Button>
                     </form>
 
                 </Paper>

@@ -69,7 +69,7 @@ export default function Register() {
                         <br></br>
                         <input className='border-2 border-rose-500 rounded-2xl p-1' required type='password' onChange={() => { setpassword2(event.target.value) }} />
                         <br></br>
-                        <Button type='submit' variant="outlined" color='error' className='mt-4 mb-3 font-body text-rose-500'>SignUp</Button>
+                        <Button className='mt-4 mb-3 font-body text-rose-500' type='submit' variant="outlined" color='error' >SignUp</Button>
                     </form>
 
                 </Paper>
