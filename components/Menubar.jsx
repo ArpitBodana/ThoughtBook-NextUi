@@ -176,7 +176,7 @@ const ResponsiveAppBar = () => {
                                         
 
                                     >
-                                        <HomeIcon /> HOME
+                                        <HomeIcon /> <span className='font-body'>HOME</span>
                                     </Button>
                                 </a>
                             </Link>
@@ -188,7 +188,7 @@ const ResponsiveAppBar = () => {
                                         className={`${!user && 'hidden'} font-body no-underline`}
 
                                     >
-                                        <AddCommentSharpIcon /> ADD THOUGHT
+                                        <AddCommentSharpIcon /><span className='font-body'> ADD THOUGHT</span>
                                     </Button>
                                 </a>
                             </Link>
@@ -200,7 +200,7 @@ const ResponsiveAppBar = () => {
                                         className={`${!user && 'hidden'} font-body no-underline`}
 
                                     >
-                                        <EditIcon /> EDIT THOUGHTS
+                                        <EditIcon /><span className='font-body'> EDIT THOUGHTS</span>
                                     </Button>
                                 </a>
                             </Link>
@@ -213,7 +213,7 @@ const ResponsiveAppBar = () => {
                                         className={`${user && 'hidden'} font-body no-underline`}
 
                                     >
-                                        <AccessibilityIcon /> LOGIN
+                                        <AccessibilityIcon /> <span className='font-body'>LOGIN</span>
                                     </Button>
                                 </a>
                             </Link>
@@ -225,7 +225,7 @@ const ResponsiveAppBar = () => {
                                         className={`${user && 'hidden'} font-body no-underline`}
 
                                     >
-                                        <PersonAddAltRoundedIcon /> SIGNUP
+                                        <PersonAddAltRoundedIcon /><span className='font-body'> SIGNUP</span>
                                     </Button>
                                 </a>
                             </Link>
