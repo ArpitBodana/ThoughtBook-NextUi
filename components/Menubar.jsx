@@ -172,8 +172,6 @@ const ResponsiveAppBar = () => {
                                     <Button
                                         onClick={handleCloseNavMenu}
                                         sx={{ my: 2, color: 'info', display: 'block' }}
-                                        className='font-body no-underline'
-                                        
 
                                     >
                                         <HomeIcon /> <span className='font-body'>HOME</span>
@@ -185,7 +183,7 @@ const ResponsiveAppBar = () => {
                                     <Button
                                         onClick={handleCloseNavMenu}
                                         sx={{ my: 2, color: 'info', display: 'block' }}
-                                        className={`${!user && 'hidden'} font-body no-underline`}
+                                        className={`${!user && 'hidden'}`}
 
                                     >
                                         <AddCommentSharpIcon /><span className='font-body'> ADD THOUGHT</span>
@@ -197,7 +195,7 @@ const ResponsiveAppBar = () => {
                                     <Button
                                         onClick={handleCloseNavMenu}
                                         sx={{ my: 2, color: 'info', display: 'block' }}
-                                        className={`${!user && 'hidden'} font-body no-underline`}
+                                        className={`${!user && 'hidden'}`}
 
                                     >
                                         <EditIcon /><span className='font-body'> EDIT THOUGHTS</span>
@@ -210,7 +208,7 @@ const ResponsiveAppBar = () => {
                                     <Button
                                         onClick={handleCloseNavMenu}
                                         sx={{ my: 2, color: 'info', display: 'block' }}
-                                        className={`${user && 'hidden'} font-body no-underline`}
+                                        className={`${user && 'hidden'}`}
 
                                     >
                                         <AccessibilityIcon /> <span className='font-body'>LOGIN</span>
@@ -222,7 +220,7 @@ const ResponsiveAppBar = () => {
                                     <Button
                                         onClick={handleCloseNavMenu}
                                         sx={{ my: 2, color: 'info', display: 'block' }}
-                                        className={`${user && 'hidden'} font-body no-underline`}
+                                        className={`${user && 'hidden'}`}
 
                                     >
                                         <PersonAddAltRoundedIcon /><span className='font-body'> SIGNUP</span>
