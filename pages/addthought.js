@@ -42,7 +42,7 @@ export default function AddForm() {
                     <meta name="author" content="Arpit Bodana" />
 
                 </Head>
-                <div className='text-center bg-rose-100 text-zinc-800 h-screen p-8'>
+                <div className='text-center bg-rose-100 text-zinc-800 h-screen md:p-8 md:mb-4'>
                     <Paper className='w-fit inline-block self-center md:p-10 p-2'>'
                         <h4 className='pt-4 text-4xl text-rose-600 font-body'>Add Your Thought</h4>
                         <form className='' onSubmit={handleAdd} >
@@ -54,7 +54,7 @@ export default function AddForm() {
                             <br></br>
                             <textarea className='border-2 border-rose-500 rounded-2xl p-1 w-52' required onChange={() => { setAuthor(event.target.value) }} />
                             <br></br>
-                            <span className=" m-4 mb-3 font-body text-rose-500">
+                            <span className=" m-4 mb-3 font-body text-rose-500 flex justify-center">
                                 <Button type='submit' variant="outlined" color='error' className=" m-4 mb-3 font-body text-rose-500" >Add Thought</Button>
                             </span>
                         </form>

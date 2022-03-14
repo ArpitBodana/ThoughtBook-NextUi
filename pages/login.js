@@ -64,7 +64,7 @@ function LoginPage() {
                 <meta name="author" content="Arpit Bodana" />
 
             </Head>
-            <div className='text-center bg-rose-100 text-zinc-800 h-screen p-8'>
+            <div className='text-center bg-rose-100 text-zinc-800 h-screen p-8 w-screen'>
 
                 <Paper className='w-fit inline-block self-center'>
                     <h4 className='pt-4 text-4xl text-rose-600 font-body'>Login</h4>
@@ -77,8 +77,8 @@ function LoginPage() {
                         <br></br>
                         <input id="Pwd" type='password' className='border-2 border-rose-500 rounded-2xl p-1' required onChange={() => { setPassword(event.target.value) }} />
                         <br></br>
-                        <span className='mt-4 mb-3 font-body text-rose-500'  >
-                            <Button className='mt-4 mb-3 font-body text-rose-500' type='submit' variant="outlined" color='error' >LOGIN</Button>
+                        <span className='mt-4 mb-3 font-body text-rose-500 flex justify-center'  >
+                            <Button className='mb-3 font-body text-rose-500' type='submit' variant="outlined" color='error' >LOGIN</Button>
                         </span>
                     </form>
                 </Paper>

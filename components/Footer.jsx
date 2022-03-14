@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Footer() {
   return (
-    <div className='bg-gray-100 text-zinc-800  pt-2 b-0 font-body'>
+    <div className='bg-gray-100 text-zinc-800  pt-4 b-0 font-body'>
         <div className=' flex justify-around'>
             <span className='m-1'>Contact Me - </span>
             <span className='m-1 hover:text-red-300'><a href='https://www.instagram.com/its_trick_master/'><InstagramIcon/></a></span>

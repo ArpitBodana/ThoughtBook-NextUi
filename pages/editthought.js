@@ -97,10 +97,8 @@ export default function ModifyForm({ posts }) {
                                     <br></br>
                                     <textarea className='border-2 border-rose-500 rounded-2xl p-1 text-center md:h-10 h-8' required defaultValue={post.author} onChange={() => { setAuthor(event.target.value) }} />
                                     <br></br>
-                                    <span className=" m-4 mb-3 m font-body text-rose-500">
+                                    <span className=" m-4 mb-3 m font-body text-rose-500 flex justify-center">
                                         <Button  className=" m-4 mb-3 m font-body text-rose-500" onClick={() => handleEdit(post.id, post.thought, post.author, post.user)} variant="outlined" color='error' >Save</Button>
-                                    </span>
-                                    <span className=" m-4 mb-3 font-body text-rose-500">
                                         <Button  className='mt-4 mb-3 font-body text-rose-500 m-4 ' onClick={() => handleDelete(post.id, post.user)} variant="outlined" color='error' >Delete</Button>
                                     </span>
                                 </form>
