@@ -54,7 +54,9 @@ export default function AddForm() {
                             <br></br>
                             <textarea className='border-2 border-rose-500 rounded-2xl p-1 w-52' required onChange={() => { setAuthor(event.target.value) }} />
                             <br></br>
-                            <Button type='submit' variant="outlined" color='error' className='mt-4 mb-3 font-body text-rose-500'>Add Thought</Button>
+                            <span className=" m-4 mb-3 font-body text-rose-500">
+                                <Button type='submit' variant="outlined" color='error' className=" m-4 mb-3 font-body text-rose-500" >Add Thought</Button>
+                            </span>
                         </form>
                     </Paper>
 

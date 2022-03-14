@@ -5,7 +5,7 @@ import Notificationbar from '../components/Notificationbar'
 import { useRouter } from 'next/router';
 import PleaseLogin from '../components/PleaseLogin';
 import Head from 'next/head'
-export default function  Changepassword() {
+export default function Changepassword() {
     const [old, setold] = useState()
     const [newpwd, setnewpwd] = useState()
     const [newpwd2, setnewpwd2] = useState()
@@ -70,7 +70,9 @@ export default function  Changepassword() {
                         <br></br>
                         <input className='border-2 border-rose-500 rounded-2xl p-1' required onChange={() => { setnewpwd2(event.target.value) }} />
                         <br></br>
-                        <Button className='mt-4 mb-3 font-body text-rose-500' type='submit' variant="outlined" color='error' >Change</Button>
+                        <span className=" mt-4 mb-3 font-body text-rose-500">
+                            <Button type='submit' variant="outlined" color='error' className=" mt-4 mb-3 font-body text-rose-500" >Change</Button>
+                        </span>
                     </form>
 
                 </Paper>

@@ -126,6 +126,7 @@ const ResponsiveAppBar = () => {
                                         </a>
                                     </Link>
                                 </MenuItem>
+                                <span className={`${!user && 'hidden'}`}>
                                 <MenuItem onClick={handleCloseNavMenu} className={`${!user && 'hidden'}`}>
                                     <Link href={'/addthought'} >
                                         <a >
@@ -135,6 +136,8 @@ const ResponsiveAppBar = () => {
                                         </a>
                                     </Link>
                                 </MenuItem>
+                                </span>
+                                <span className={`${!user && 'hidden'}`}>
                                 <MenuItem onClick={handleCloseNavMenu} className={`${!user && 'hidden'}`} >
                                     <Link href={'/editthought'}>
                                         <a>
@@ -144,7 +147,8 @@ const ResponsiveAppBar = () => {
                                         </a>
                                     </Link>
                                 </MenuItem>
-
+                                </span>
+                                <span className={`${user && 'hidden'}`}>
                                 <MenuItem onClick={handleCloseNavMenu} className={`${user && 'hidden'}`}>
                                     <Link href={'/login'}>
                                         <a>
@@ -154,15 +158,18 @@ const ResponsiveAppBar = () => {
                                         </a>
                                     </Link>
                                 </MenuItem>
+                                </span>
+                                <span className={`${user && 'hidden'}`}>
                                 <MenuItem onClick={handleCloseNavMenu} className={`${user && 'hidden'}`}>
                                     <Link href={'/signup'}>
                                         <a>
-                                        <span className={`${user && 'hidden'}`}>
+                                        
                                             <Typography textAlign="center" className='font-body' ><PersonAddAltRoundedIcon /> SIGNUP</Typography>
-                                            </span>
+                                
                                         </a>
                                     </Link>
                                 </MenuItem>
+                                </span>
                             </Menu>
                         </Box>
                         <Typography

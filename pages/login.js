@@ -77,7 +77,9 @@ function LoginPage() {
                         <br></br>
                         <input id="Pwd" type='password' className='border-2 border-rose-500 rounded-2xl p-1' required onChange={() => { setPassword(event.target.value) }} />
                         <br></br>
-                        <Button className='mt-4 mb-3 font-body text-rose-500' type='submit' variant="outlined" color='error' >LOGIN</Button>
+                        <span className='mt-4 mb-3 font-body text-rose-500'  >
+                            <Button className='mt-4 mb-3 font-body text-rose-500' type='submit' variant="outlined" color='error' >LOGIN</Button>
+                        </span>
                     </form>
                 </Paper>
 
