@@ -14,7 +14,7 @@ function PleaseLogin() {
                 <meta name="author" content="Arpit Bodana" />
 
             </Head>
-            <div className="bg-rose-100 text-zinc-800">
+            <div className="bg-rose-100 text-zinc-800 font-body h-screen">
                 <h2>Please Login to use these options </h2>
             </div>
             

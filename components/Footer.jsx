@@ -2,10 +2,10 @@ import React from 'react'
 import Link from 'next/link';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Button from '@mui/material/Button';
+
 function Footer() {
   return (
-    <div className='bg-gray-100 text-zinc-800 md:bg-zinc-800 md:text-gray-100 pt-2 b-0'>
+    <div className='bg-gray-100 text-zinc-800  pt-2 b-0 font-body'>
         <div className=' flex justify-around'>
             <span className='m-1'>Contact Me - </span>
             <span className='m-1 hover:text-red-300'><a href='https://www.instagram.com/its_trick_master/'><InstagramIcon/></a></span>
@@ -25,7 +25,14 @@ function Footer() {
           <Link href={'/about'}>
             <a><span className='m-1 hover:text-red-300'>About</span></a>
           </Link>
+          <br/>
+          
         </div>
+        <div className='text-center'>
+        <span className=''> &#169; 2021 ThoughtBook WebSite Designed By ArpitBodana .</span> 
+        </div>
+        
+        
     </div>
   )
 }
