@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import Notificationbar from '../components/Notificationbar'
 import AlreadyLogin from '../components/AlreadyLogin';
 import Head from 'next/head'
+import axios from 'axios'
 
 
 function LoginPage() {
@@ -47,6 +48,11 @@ function LoginPage() {
         { data.token && setActive(true) }
 
     }
+    useEffect(()=>{
+        axios.get('https://www.popads.net/api/website_code?key=APIKEY&website_id=4750024&of=1').then((res)=>{
+            console.log(res.data).catch(err=>console.log(err))
+        })
+    })
 
     if (token != '') {
         return (

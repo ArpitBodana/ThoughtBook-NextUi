@@ -7,7 +7,7 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return <>
-
+    
     <Menubar />
     <Component {...pageProps} />
     <Footer />
