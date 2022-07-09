@@ -23,6 +23,7 @@ function Homepage({ posts }) {
         <meta name="description" content="  Thoughtbook webapp for anyone who is intrested in reading famous thought or add your own thoughts that are read by others" />
         <meta name="keywords" content=" Add whats come in your mind to Thoughtbook  whatsapp status  quotes attitude status" />
         <meta name="author" content="Arpit Bodana" />
+        <meta name="google-site-verification" content="TZvzximXOO43jEFIVGoc5fb7EYmU4gzCpSNx342aWR4" />
 
       </Head>
       <div className="content-center bg-rose-100 dark:bg-zinc-800 dark:text-white ">

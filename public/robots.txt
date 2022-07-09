@@ -1,0 +1,4 @@
+User-agent: *
+Allow:/
+
+sitemap:https://thoughbook.vercel.app/api/sitemap.xml
