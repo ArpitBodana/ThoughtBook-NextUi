@@ -33,4 +33,5 @@ a {
 .footer{
   position: sticky;
   top:100%;
+  margin-bottom: 0;
 }
