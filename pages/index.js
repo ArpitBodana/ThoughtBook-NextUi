@@ -28,7 +28,7 @@ function Homepage({ posts }) {
       <div className="content-center bg-rose-100 dark:bg-zinc-800 dark:text-white ">
 
 
-        <main className='pt-6'>
+        <main className='pt-6 thought'>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2' >
             {
               currentPost.map(post => {

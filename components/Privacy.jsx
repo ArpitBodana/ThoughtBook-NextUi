@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 function Privacy() {
     return (
-        <div className='bg-rose-100 text-zinc-800  font-body'>
+        <div className='bg-rose-100 text-zinc-800  font-body p-8'>
             <Head>
                 <title> Privacy policies of Thoughtbook</title>
                 <meta name="description" content="Privacy policies of Thoughtbook app" />

@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 function TermsnConditions() {
     return (
-        <div className='bg-rose-100 text-zinc-800 font-body'>
+        <div className='bg-rose-100 text-zinc-800 font-body p-8'>
             <Head>
                 <title> Terms and condtions of Thoughtbook</title>
                 <meta name="description" content="Terms and condtions of Thoughtbook app" />
