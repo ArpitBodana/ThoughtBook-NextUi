@@ -13,8 +13,12 @@ body {
   
 }
 .thought{
-  min-height: 130vh;
+  min-height: 100vh;
 }
+.thought2{
+  min-height: 140vh;
+}
+
 
 a {
   color: inherit;

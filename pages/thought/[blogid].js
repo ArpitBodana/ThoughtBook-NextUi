@@ -15,7 +15,7 @@ export default function Blog({ post }) {
                 <meta name="author" content="Arpit Bodana" />
 
             </Head>
-            <div className='grid grid-cols-1 text-center content-center bg-rose-100 dark:bg-zinc-800 dark:text-white thought'>
+            <div className='grid grid-cols-1 text-center content-center bg-rose-100 dark:bg-zinc-800 dark:text-white thought2'>
                 <Paper className="m-5 mb-52 mt-12 text-zinc-800 z-20 p-5" key={post.id}>
 
                     <span className='font-body text-xl'>{post.id}</span>
