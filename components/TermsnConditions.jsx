@@ -17,7 +17,6 @@ function TermsnConditions() {
         />
         <meta name="author" content="Arpit Bodana" />
       </Head>
-      <Script src="https://www.popads.net/api/website_code?key=APIKEY&website_id=4849261&tl=1&of=1" />
       <h2 className="text-2xl mb-3 pt-3">
         <strong>Terms and Conditions</strong>
       </h2>

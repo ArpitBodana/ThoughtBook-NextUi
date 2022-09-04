@@ -11,7 +11,6 @@ export default function Disclamier() {
         <meta name="keywords" content=" Disclaimer Thoughtbook " />
         <meta name="author" content="Arpit Bodana" />
       </Head>
-      <Script src="https://www.popads.net/api/website_code?key=APIKEY&website_id=4849261&tl=1&of=1" />
       <DisclamierC />
     </>
   );

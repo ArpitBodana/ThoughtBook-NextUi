@@ -13,7 +13,6 @@ function Privacy() {
         <meta name="keywords" content=" Privacy policies of Thoughtbook app" />
         <meta name="author" content="Arpit Bodana" />
       </Head>
-      <Script src="https://www.popads.net/api/website_code?key=APIKEY&website_id=4849261&tl=1&of=1" />
       <h3 className="text-2xl mb-6 pt-3">Privacy Policy for Thoughtbook</h3>
 
       <p>

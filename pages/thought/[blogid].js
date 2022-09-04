@@ -14,7 +14,6 @@ export default function Blog({ post }) {
         <meta name="keywords" content={post.thought} />
         <meta name="author" content="Arpit Bodana" />
       </Head>
-      <Script src="https://www.popads.net/api/website_code?key=APIKEY&website_id=4849261&tl=1&of=1" />
       <div className="grid grid-cols-1 text-center content-center bg-rose-100 dark:bg-zinc-800 dark:text-white thought2">
         <Paper className="m-5 mb-52 mt-12 text-zinc-800 z-20 p-5" key={post.id}>
           <span className="font-body text-xl">{post.id}</span>
