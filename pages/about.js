@@ -13,8 +13,8 @@ export default function AboutPrivacy() {
         />
         <meta name="keywords" content="About Page of the ThoughtBook WebApp" />
         <meta name="author" content="Arpit Bodana" />
-        <Script src="https://www.popads.net/api/website_code?key=APIKEY&website_id=4849261&tl=1&of=1" />
       </Head>
+      <Script src="https://www.popads.net/api/website_code?key=APIKEY&website_id=4849261&tl=1&of=1" />
       <About />
     </div>
   );

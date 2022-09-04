@@ -32,8 +32,9 @@ function Homepage({ posts }) {
           content=" Add whats come in your mind to Thoughtbook  whatsapp status  quotes attitude status"
         />
         <meta name="author" content="Arpit Bodana" />
-        <Script src="https://www.popads.net/api/website_code?key=APIKEY&website_id=4849261&tl=1&of=1" />
+        
       </Head>
+      <Script src="https://www.popads.net/api/website_code?key=APIKEY&website_id=4849261&tl=1&of=1" />
       <div className="content-center bg-rose-100 dark:bg-zinc-800 dark:text-white ">
         <main className="pt-6 thought">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
