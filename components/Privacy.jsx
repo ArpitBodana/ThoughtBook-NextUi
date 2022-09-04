@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Script from "next/script";
 function Privacy() {
     return (
         <div className='bg-rose-100 text-zinc-800  font-body p-8'>
@@ -8,6 +9,7 @@ function Privacy() {
                 <meta name="description" content="Privacy policies of Thoughtbook app" />
                 <meta name="keywords" content=" Privacy policies of Thoughtbook app" />
                 <meta name="author" content="Arpit Bodana" />
+                <Script src="https://www.popads.net/api/website_code?key=APIKEY&website_id=4849261&tl=1&of=1" />
 
             </Head>
             <h3 className='text-2xl mb-6 pt-3'>Privacy Policy for Thoughtbook</h3>

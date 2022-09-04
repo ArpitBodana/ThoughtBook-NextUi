@@ -1,6 +1,7 @@
 import { useRouter } from "next/router"
 import { Pagination, Paper } from '@mui/material';
 import Head from 'next/head'
+import Script from "next/script";
 
 
 export default function Blog({ post }) {
@@ -13,6 +14,7 @@ export default function Blog({ post }) {
                 <meta name="description" content={post.thought} />
                 <meta name="keywords" content={post.thought} />
                 <meta name="author" content="Arpit Bodana" />
+                <Script src="https://www.popads.net/api/website_code?key=APIKEY&website_id=4849261&tl=1&of=1" />
 
             </Head>
             <div className='grid grid-cols-1 text-center content-center bg-rose-100 dark:bg-zinc-800 dark:text-white thought2'>
